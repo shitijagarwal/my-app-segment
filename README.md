@@ -39,10 +39,10 @@ Navigate to the [Webhook URL](http://webhook.site/#!/d037276b-9d49-4ab6-b663-11f
 
 The first request is of `type` page, for user loading the webpage. 
 
-The button click requests are of `type` track and have unique `event` names for each button. The `click-me-button-click` event has no `properties`, while the 
-`holler-button-click` `event` has `properties` - `eventClass` and `eventId`.
+The button click requests are of `type` track and have unique `event` names for each button. `event`:`click-me-button-click`  has no `properties`, while the 
+`event`:`holler-button-click` has `properties` - `eventClass` and `eventId`.
 
-Note that the `anonymousId` on all requests is the same for all requests in the session.  
+Note that the `anonymousId` is the same for all requests in the session.
 
 
 

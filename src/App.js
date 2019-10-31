@@ -10,7 +10,7 @@ class HollerButton extends Component {
     return (
       <button onClick={this.trackEvent.bind(this)}> 
         {this.props.children}; 
-        </button>
+      </button>
     );
   }
 }
@@ -36,9 +36,9 @@ function App() {
         >
           Vegetables
         </a>
-        {arr.map(name => <div key={`friend-${name}`}>{name}</div>)}
+          {arr.map(name => <div key={`friend-${name}`}>{name}</div>)}
         <hr />
-        <HollerButton eventId="holler-btn" eventClass="btn">Holler!</HollerButton>
+          <HollerButton eventId="holler-btn" eventClass="btn">Holler!</HollerButton>
         <hr />
         <button onClick={clickMeHandler}>
           Click me.
