@@ -35,7 +35,13 @@ Open [http://localhost:3000](http://localhost:3000) in the browser. Click the bu
 
 ## Track events 
 
-Open [Webhook site](http://webhook.site/#!/d037276b-9d49-4ab6-b663-11f1d3a85a4a/90254c2d-9b9f-466a-b006-b7e52adeaa17/1) in the browser and observe requests.
+Navigate to the [Webhook URL](http://webhook.site/#!/d037276b-9d49-4ab6-b663-11f1d3a85a4a/90254c2d-9b9f-466a-b006-b7e52adeaa17/1) in the browser and observe requests. 
+
+Note that the `anonymousId` on all requesrs is set and common across all requests tied to the same sesson. 
+
+The first request is of `type` page, for user loading the webpage. 
+
+The button click requests are of `type` track and have unique `event` names for each button. The `clicked-button-x-from-b` event has no `properties`, while the `button-click` `event` has `properties` - `eventClass` and `eventId`.
 
 
 
