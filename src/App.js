@@ -3,9 +3,9 @@ import logo from './logo.svg';
 import './App.css';
 
 
-class SignupButton extends Component {
+class HollerButton extends Component {
   trackEvent() {
-    window.analytics.track('button-click',{eventId: this.props.eventId, eventClass: this.props.eventClass});
+    window.analytics.track('holler-button-click',{eventId: this.props.eventId, eventClass: this.props.eventClass});
   } render() {
     return (
       <button onClick={this.trackEvent.bind(this)}> 
@@ -15,12 +15,11 @@ class SignupButton extends Component {
   }
 }
 
-function clickHandlerB() {
-  window.analytics.track("clicked-button-x-from-b");
+function clickMeHandler() {
+  window.analytics.track("click-me-button-click");
 }
 
 function App() {
-  const x = 100;
   const arr = ["Carrot", "Tomato", "Potato"];
   return (
     <div className="App">
@@ -35,13 +34,13 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Vegetables: {x}
+          Vegetables
         </a>
         {arr.map(name => <div key={`friend-${name}`}>{name}</div>)}
         <hr />
-        <SignupButton eventId="holler-btn" eventClass="btn">Holler!</SignupButton>
+        <HollerButton eventId="holler-btn" eventClass="btn">Holler!</HollerButton>
         <hr />
-        <button onClick={clickHandlerB}>
+        <button onClick={clickMeHandler}>
           Click me.
         </button> 
       </header>
