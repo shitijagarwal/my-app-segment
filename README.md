@@ -27,7 +27,7 @@ Ensure npx version is 10.2.0, otherwise update to latest.
 
 In the project folder, run the following:
 
-### `nmp start`
+### `npm start`
 
 ## Interact with the app
 
