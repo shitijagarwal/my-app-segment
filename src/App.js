@@ -23,7 +23,7 @@ function clickHandlerB() {
 
 function App() {
   const x = 100;
-  const arr = ["Cattot", "Tomato", "Potato"];
+  const arr = ["Carrot", "Tomato", "Potato"];
 
   const clickHandler = () => {
     // debugger;
