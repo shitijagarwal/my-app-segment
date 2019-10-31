@@ -23,7 +23,7 @@ function clickHandlerB() {
 
 function App() {
   const x = 100;
-  const arr = ["George", "Achin", "Shitij"];
+  const arr = ["Cattot", "Tomato", "Potato"];
 
   const clickHandler = () => {
     // debugger;
@@ -45,7 +45,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn shit: {x}
+          Vegetables: {x}
         </a>
         {arr.map(name => <div key={`friend-${name}`}>{name}</div>)}
         <hr />
