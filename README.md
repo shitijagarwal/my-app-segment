@@ -1,12 +1,27 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Install latest version of node and npx
 
-In the project directory, you can run:
+1. Check the version of node by running:
 
-### `npm start`
+### `node -v`
 
-Runs the app in the development mode.<br />
+Ensure node version is v13.0.1, otherwise update to latest.
+
+2. Check the version of npm by running:
+
+### `npm -v`
+
+Ensure npm version is 6.12.0, otherwise update to latest.
+
+3. Check the version of npx by running:
+
+### `npx -v`
+
+Ensure npx version is 10.2.0, otherwise update to latest.
+
+## Run the app
+
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br />
