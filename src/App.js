@@ -8,31 +8,21 @@ class SignupButton extends Component {
     window.analytics.track('button-click',{eventId: this.props.eventId, eventClass: this.props.eventClass});
   } render() {
     return (
-      <button onClick={this.trackEvent.bind(this)}>
-        {this.props.children};
-      </button>
+      <button onClick={this.trackEvent.bind(this)}> 
+        {this.props.children}; 
+        </button>
     );
   }
 }
 
-
 function clickHandlerB() {
-  // debugger;
   window.analytics.track("clicked-button-x-from-b");
 }
 
 function App() {
   const x = 100;
   const arr = ["Carrot", "Tomato", "Potato"];
-
-  const clickHandler = () => {
-    // debugger;
-    window.analytics.track("clicked-button-x");
-  };
-
   return (
-
-
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
